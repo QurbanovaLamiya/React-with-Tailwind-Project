@@ -1,9 +1,7 @@
-import { AiOutlineMenu, AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
-import { BsFillCartFill } from "react-icons/bs";
-import { TbTruckDelivery } from "react-icons/tb";
-import { FaWallet } from "react-icons/fa";
-import { MdHelp, MdFavorite } from "react-icons/md";
 import { useState } from "react";
+import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
+import { BsFillCartFill } from "react-icons/bs";
+import Nav from "../Nav";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -43,47 +41,7 @@ const Header = () => {
         <BsFillCartFill size={20} className="mr-2" />
         Card
       </button>
-
-      {/* Mobile Menu */}
-
-      {nav ? (
-        <div className="w-full h-screen bg-black/80 fixed top-0 left-0 z-10"></div>
-      ) : (
-        ""
-      )}
-
-      <div
-        className={
-          nav
-            ? "fixed top-0 left-0 w-[300px] h-screen bg-white z-10 duration-500"
-            : "fixed top-0 left-[-100%] w-[300px] h-screen bg-white z-10 duration-500"
-        }
-      >
-        <AiOutlineClose
-          size={30}
-          className="absolute top-4 right-4 cursor-pointer"
-          onClick={() => setNav(!nav)}
-        />
-        <h2 className="text-2xl p-4">
-          Best <span className="font-bold">Eats</span>
-        </h2>
-        <nav>
-          <ul className="flex flex-col p-4 text-gray-800">
-            <li className="text-xl py-4 flex">
-              <TbTruckDelivery size={25} className="mr-4" /> Orders
-            </li>
-            <li className="text-xl py-4 flex">
-              <MdFavorite size={25} className="mr-4" /> Favorites
-            </li>
-            <li className="text-xl py-4 flex">
-              <FaWallet size={25} className="mr-4" /> Wallet
-            </li>
-            <li className="text-xl py-4 flex">
-              <MdHelp size={25} className="mr-4" /> Help
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <Nav nav={nav} setNav={setNav} />
     </header>
   );
 };
