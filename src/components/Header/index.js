@@ -7,7 +7,7 @@ const Header = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <header className="max-w-[1640px] mx-auto flex justify-between items-center p-4">
+    <header className="container flex justify-between items-center ">
       {/* Left Side */}
 
       <div className="flex items-center">

@@ -10,3 +10,9 @@
     @apply text-xl py-4 flex;
   }
 }
+
+@layer components {
+  .container {
+    @apply max-w-[1640px] mx-auto p-4;
+  }
+}
