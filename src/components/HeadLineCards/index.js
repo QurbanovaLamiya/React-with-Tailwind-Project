@@ -42,7 +42,7 @@ const HeadLineCards = () => {
           </button>
         </div>
         <img
-          src="https://images.pexels.com/photos/2173774/pexels-photo-2173774.jpeg?auto=compress&cs=tinysrgb&w=600"
+          src="https://images.pexels.com/photos/15071185/pexels-photo-15071185.jpeg?auto=compress&cs=tinysrgb&w=600"
           alt=""
           className="max-h-[160px] md:max-h-[250px] w-full object-cover rounded-xl"
         />
