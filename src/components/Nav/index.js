@@ -15,8 +15,8 @@ const Nav = ({ nav, setNav }) => {
       <div
         className={
           nav
-            ? "fixed top-0 left-0 w-[300px] h-screen bg-white z-10 duration-500"
-            : "fixed top-0 left-[-100%] w-[300px] h-screen bg-white z-10 duration-500"
+            ? "fixed top-0 left-0 w-[300px] h-screen bg-white z-10"
+            : "fixed top-0 left-[-100%] w-[300px] h-screen bg-white z-10"
         }
       >
         <AiOutlineClose
@@ -24,7 +24,7 @@ const Nav = ({ nav, setNav }) => {
           className="absolute top-4 right-4 cursor-pointer"
           onClick={() => setNav(!nav)}
         />
-        <h2 className="text-2xl p-4  text-orange-600">
+        <h2 className="text-2xl p-4 text-orange-600">
           Best <span className="font-bold">Eats</span>
         </h2>
         <nav>

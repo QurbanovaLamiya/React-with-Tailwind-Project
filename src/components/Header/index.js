@@ -19,7 +19,7 @@ const Header = () => {
         <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2 text-orange-600">
           Best <span className="font-bold">Eats</span>
         </h1>
-        <div className="lg:flex items-center bg-gray rounded-full p-1 text-[14px]">
+        <div className="lg:flex items-center bg-grey rounded-full p-1 text-[14px]">
           <span className="bg-black text-white rounded-full p-2">Delivery</span>
           <span className="p-2">Pickup</span>
         </div>
@@ -27,7 +27,7 @@ const Header = () => {
 
       {/* Search Input */}
 
-      <div className="bg-gray rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]">
+      <div className="bg-grey rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]">
         <AiOutlineSearch size={25} />
         <input
           className="bg-transparent p-2 w-full focus:outline-none"
@@ -41,7 +41,7 @@ const Header = () => {
         <BsFillCartFill size={20} className="mr-2" />
         Card
       </button>
-      <Nav nav={nav} setNav={setNav} />
+      {nav && <Nav nav={nav} setNav={setNav} />}
     </header>
   );
 };
