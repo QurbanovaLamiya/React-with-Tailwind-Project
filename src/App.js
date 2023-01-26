@@ -1,9 +1,9 @@
 import { Fragment } from "react";
 import Header from "./components/Header";
-import "./App.css";
 import Hero from "./components/Hero";
 import HeadLineCards from "./components/HeadLineCards";
 import Foods from "./components/Foods";
+import "./App.css";
 
 const App = () => {
   return (
