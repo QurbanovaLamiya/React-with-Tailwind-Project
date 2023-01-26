@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import "./App.css";
 import Hero from "./components/Hero";
 import HeadLineCards from "./components/HeadLineCards";
+import Foods from "./components/Foods";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Header />
       <Hero />
       <HeadLineCards />
+      <Foods />
     </Fragment>
   );
 };
